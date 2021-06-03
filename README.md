@@ -19,7 +19,8 @@ Identicon::identiconImage('user');
 or use helper
 
 ```php
-identicon_img('Hello');
+identicon_image('Hello');
+identicon_base64('username', 200);
 ```
 
 

@@ -33,7 +33,7 @@ class Identicon
             'value' => $value,
             'size' => $size,
             'style' => [
-                'backgroundColor' => $bgColor,
+                'backgroundColor' => $backgroundColor,
                 'padding' => $padding
             ]
         ]);

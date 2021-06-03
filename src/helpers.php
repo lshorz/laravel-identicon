@@ -2,7 +2,7 @@
 
 use Lshorz\LaravelIdenticon\Identicon;
 
-if (!function_exists('identicon_img')) {
+if (!function_exists('identicon_image')) {
     /**
      * 显示Identicon头像
      *
@@ -13,9 +13,9 @@ if (!function_exists('identicon_img')) {
      *
      * @return \Illuminate\Http\Response
      */
-    function identicon_img(string $value, int $size = 120, string $backgroundColor = '#FFF', float $padding = 0.08)
+    function identicon_image(string $value, int $size = 120, string $backgroundColor = '#FFF', float $padding = 0.08)
     {
-        return app(Identicon::class)->getIdenticonImage($value, $size, $backgroundColor, $padding);
+        return app(Identicon::class)->identiconImage($value, $size, $backgroundColor, $padding);
     }
 }
 
@@ -32,7 +32,7 @@ if (!function_exists('identicon_base64')) {
      */
     function identicon_base64(string $value, int $size = 120, string $backgroundColor = '#FFF', float $padding = 0.08)
     {
-        return app(Identicon::class)->getIdenticonBase64($value, $size, $backgroundColor, $padding);
+        return app(Identicon::class)->identiconBase64($value, $size, $backgroundColor, $padding);
     }
 }
 
@@ -50,7 +50,7 @@ if (!function_exists('identicon_resource')) {
      */
     function identicon_resource(string $value, int $size = 120, string $backgroundColor = '#FFF', float $padding = 0.08)
     {
-        return app(Identicon::class)->getIdenticonResource($value, $size, $backgroundColor, $padding);
+        return app(Identicon::class)->identiconResource($value, $size, $backgroundColor, $padding);
     }
 }
 
